@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: anguo-bot
+    env: python
+    schedule: "*/2 * * * *"  # 每2分鐘執行
+    buildCommand: ""
+    startCommand: "python main.py"
